@@ -4,30 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <h1>Регистрация</h1>
-      <div>
-        <span>Уже есть аккаунт?</span>
-        <a href="#">Войти</a>
-      </div>
       <form action="/" method="post">
-        <div>
-          <input type="text" name="companyName" placeholder="Имя компании" required />
+        <div class="form-header">
+          <h1>Регистрация</h1>
+          <p>Уже есть аккаунт?<a href="#">Войти</a></p>
         </div>
+        <input
+          type="text"
+          name="companyName"
+          placeholder="Имя компании"
+          required
+        />
         <div>
           <input type="text" name="firstName" placeholder="Имя" required />
           <input type="text" name="lastName" placeholder="Фамилия" required />
         </div>
-        <div>
-          <input type="email" name="email" placeholder="E-mail" required />
-        </div>
-        <button type="submit">Зарегистрироваться <span>&rarr;</span></button>
-        <div>
-            <input type="checkbox" name="agreed" id="agreed">
-            <label for="agreed">Я прочитал и принимаю</label>
-            <a href="#">Условия использования</a>
+        <input type="email" name="email" placeholder="E-mail" required />
+        <button type="submit">Зарегистрироваться <span>&#10140;</span></button>
+        <div class="form-agree-section">
+          <input type="checkbox" name="agreed" id="agreed" />
+          <label for="agreed">Я прочитал и принимаю</label>
+          <a href="#">Условия использования</a>
         </div>
       </form>
     </main>
