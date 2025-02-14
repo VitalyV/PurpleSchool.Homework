@@ -32,10 +32,6 @@ form {
     grid-column: 2;
 }
 
-/* form h1 {
-    margin: 0 auto;
-} */
-
 .form-header {
     font-size: 18px;
     font-weight: 400;
@@ -87,7 +83,6 @@ form {
     font-style: italic;
     color: #999;
     font-weight: 400;
-    /* padding-left: 11px; */
 }
 
 button {
@@ -124,4 +119,19 @@ button {
     color: #089FE0;
     text-decoration: none;
     margin-left: 12px;
+}
+
+.inline-input-group {
+    display: flex;
+    gap: 1px;
+}
+
+.inline-input-group .input-text:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inline-input-group .input-text:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
