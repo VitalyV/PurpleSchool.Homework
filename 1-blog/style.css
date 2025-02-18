@@ -37,24 +37,20 @@ a {
 }
 
 .container {
-    width: 1080px;
+    max-width: 1080px;
+    min-width: 1080px;
     grid-column: 2;
 }
 
 .header {
     display: flex;
+    gap: 77px;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo-and-nav {
-    display: flex;
-    align-items: center;
-}
-
-.logo-and-nav .nav {
-    margin: 4px 0 0 77px;
-
+.nav {
+    flex: 1;
 }
 
 .logo {}
@@ -122,7 +118,7 @@ a {
 }
 
 .form-group__search:focus::placeholder {
-    color: transparent; 
+    color: transparent;
 }
 
 .hero {
@@ -180,21 +176,21 @@ a {
 }
 
 .article__img {
-    width: 896px;
+    max-width: 896px;
 }
 
 .article__text {
-    width: 708px;
+    max-width: 708px;
 }
 
 .article__text-item {
-    font-size: 20px;
-    line-height: 32px;
-}
-
-.article__text-item_small {
     font-size: 16px;
     line-height: 30px;
+}
+
+.article__text-item:first-child {
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .footer {
