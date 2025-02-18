@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #F39494;
+    font-family: "Open Sans", serif;
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #FFFEFE;
+    width: 582px;
+    max-width: 582px;
+    height: 573px;
+    max-height: 573px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    border-radius: 10px;
+}
+
+form {
+    width: 394px;
+    grid-column: 2;
+}
+
+.form-header {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+
+    margin-top: 72px;
+    margin-bottom: 47px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.03px;
+}
+
+.form-header p {
+    color: #666;
+}
+
+.form-header a {
+    color: #089FE0;
+    margin-left: 6px;
+}
+
+.input-text {
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 21.79px;
+    margin-bottom: 22px;
+    width: 100%;
+    padding-left: 11px;
+    border: 1px solid #F5F5F5;
+}
+
+.input-text:focus {
+    background-color: white;
+    border: 1px solid #F5F5F5;
+    outline: none;
+}
+
+.input-text::placeholder {
+    font-style: italic;
+    color: #999;
+    font-weight: 400;
+}
+
+button {
+    background-color: #089FE0;
+    height: 44px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24.51px;
+    width: 100%;
+    margin-bottom: 22px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-agree-section {
+    font-size: 14px;
+    line-height: 19.07px;
+    display: flex;
+    align-self: center;
+}
+
+.form-agree-section input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 1px 0 0 0;
+}
+
+.form-agree-section label {
+    color: #666;
+    margin-left: 5px;
+}
+
+.form-agree-section a {
+    color: #089FE0;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.inline-input-group {
+    display: flex;
+    gap: 1px;
+}
+
+.inline-input-group .input-text:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inline-input-group .input-text:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
